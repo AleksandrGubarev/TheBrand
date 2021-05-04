@@ -23,6 +23,23 @@ body {
   padding-bottom: 19px;
 }
 
+.header__menu-left {
+  display: flex;
+  min-width: 111px;
+  align-items: center;
+}
+
+.header__menu-right {
+  display: flex;
+  min-width: 169px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  list-style: none;
+}
+
 .header__logo {
   margin-right: 40px;
 }
@@ -33,6 +50,72 @@ body {
 
 .header__menu-link:last-of-type {
   margin-right: 0;
+}
+
+.header__menu-right {
+  position: relative;
+}
+
+.menu__list {
+  position: relative;
+}
+
+.menu__box {
+  width: 232px;
+  height: 715px;
+  background: #FFFFFF;
+  display: none;
+  padding-top: 37px;
+  padding-left: 34px;
+}
+
+.menu__list:hover .menu__box {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  /* пришлось использовать этот костыль из-за непонимания, как сделать это меню буз js */
+  right: -136px;
+  z-index: 2;
+}
+
+.menu__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 24px;
+}
+
+.menu__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+}
+
+.menu__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-left: 22px;
+  margin-bottom: 20px;
+}
+
+.list__link {
+  text-decoration: none;
+  color: #6F6E6E;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  margin-bottom: 11px;
+  display: block;
+}
+
+.list__link:last-child {
+  margin-bottom: 0;
+}
+
+.list__link:hover {
+  color: #F16D7F;
 }
 
 .banner {
@@ -171,6 +254,10 @@ body {
   margin-right: 0;
 }
 
+.card__item-link {
+  text-decoration: none;
+}
+
 .card__item-description {
   padding-left: 17px;
   padding-right: 28px;
@@ -181,6 +268,7 @@ body {
   line-height: 16px;
   font-weight: 400;
   margin-bottom: 13px;
+  color: #000000;
 }
 
 .card__text{
@@ -221,7 +309,7 @@ body {
   margin-right: 30px;
 }
 
-..advantages__wrap:last-child {
+.advantages__wrap:last-child {
   margin-right: 0;
 }
 
@@ -253,7 +341,6 @@ body {
 }
 
 .feedback {
-  
   min-height: 440px;
   background-image: url(img/subscribe_bi.png);
   background-repeat: no-repeat;
@@ -308,15 +395,18 @@ body {
   width: 322px;
   border-radius: 45px 0 0 45px;
   opacity: 0.67;
+  border: none;
+  padding-left: 22px;
 }
 
 .subscribe__button {
   background: #E05C6E;
-  margin-left: -6px;
+  margin-left: -3px;
   color: #FFFFFF;
   width: 100px;
-  height: 53px;
+  height: 49px;
   border-radius: 0 45px 45px 0;
+  border: none;
 }
 
 .footer {
@@ -349,4 +439,108 @@ body {
 
 .footer__link:last-child {
   margin-right: 0;
+}
+
+.catalog__nav {
+  background: #F8F3F4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 51px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__link{
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.last__nav-link {
+  font-weight: 700;
+  color: #F16D7F;;
+}
+
+.nav__link-item:not(:last-child)::after {
+  content: "/";
+  margin: 0px 3px;
+}
+
+.nav__title{
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.filter {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.catalog__filter {
+  margin-right: 330px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  text-decoration: none;
+}
+
+.catalog__filter:hover {
+  color: #EF5B70;
+}
+
+.catalog_choise-menu {
+  margin-right: 48px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #6F6E6E;
+  text-decoration: none;
+}
+
+.catalog__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48.5px;
+}
+
+.catalog__pages {
+  display: flex;
+  justify-content: center;
+}
+
+.pages__ul {
+  text-align: center;
+  border: 1px solid #EBEBEB;
+  border-radius: 5px;
+  padding: 11.5px 40px;
+}
+
+.pages__li {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: gray;
+  margin-right: 15px;
+}
+
+.pages__li:last-child {
+  margin-right: 0;
+}
+
+.pages__li:hover {
+  color: #EF5B70;
 }

@@ -16,15 +16,57 @@
   <header class="header">
     <div class="container">
       <nav class="header__menu">
-        <div class="header__menu-left">
-          <a href="index.html"><img src="img/header_logo.svg" class="header__logo" alt="logo"></a>
-          <a href="#"><img src="img/header__search.svg" class="header__search" alt="search"></a>
-        </div>
-        <div class="header__menu-right">
-          <a href="#" class="header__menu-link"><img src="img/header__menu.svg" class="header__link" alt="menu"></a>
-          <a href="#" class="header__menu-link"><img src="img/header__login.svg" class="header__link" alt="login"></a>
-          <a href="#" class="header__menu-link"><img src="img/header__cart.svg" class="header__link" alt="cart"></a>
-        </div>
+        <ul class="header__menu-left">
+          <!-- жду когда пройдем иконочные шрифты, пока это картинки из макета, из-за чего все и поехало -->
+          <li class="menu__list">
+            <a href="index.html"><img src="img/header_logo.svg" class="header__logo" alt="logo"></a>
+          </li>
+          <li class="menu__list">
+            <a href="#"><img src="img/header__search.svg" class="header__search" alt="search"></a>
+          </li>
+        </ul>
+        <ul class="header__menu-right">
+          <li class="menu__list">
+            <a href="#" class="header__menu-link main__menu"><img src="img/header__menu.svg" class="header__link"
+                alt="menu"></a>
+            <!-- пришлось выкручиваться через hover, так как мы пока js не трогали, а тут вроде только через него можно -->
+            <div class="menu__box">
+              <div class="menu__item">
+                <h2 class="menu__title">MENU</h2>
+                <h3 class="menu__subtitle">MAN</h3>
+                <div class="menu__wrap">
+                  <a href="catalog.html" class="list__link">Accessories</a>
+                  <a href="catalog.html" class="list__link">Bags</a>
+                  <a href="catalog.html" class="list__link">Denim</a>
+                  <a href="catalog.html" class="list__link">T-Shirts</a>
+                </div>
+                <h3 class="menu__subtitle">WOMAN</h3>
+                <div class="menu__wrap">
+                  <a href="catalog.html" class="list__link">Accessories</a>
+                  <a href="catalog.html" class="list__link">Jackets & Coats</a>
+                  <a href="catalog.html" class="list__link">Polos</a>
+                  <a href="catalog.html" class="list__link">T-Shirts</a>
+                  <a href="catalog.html" class="list__link">Shirts</a>
+                </div>
+                <h3 class="menu__subtitle">KIDS</h3>
+                <div class="menu__wrap">
+                  <a href="catalog.html" class="list__link">Accessories</a>
+                  <a href="catalog.html" class="list__link">Jackets & Coats</a>
+                  <a href="catalog.html" class="list__link">Polos</a>
+                  <a href="catalog.html" class="list__link">T-Shirts</a>
+                  <a href="catalog.html" class="list__link">Shirts</a>
+                  <a href="catalog.html" class="list__link">Bags</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="header__menu-link"><img src="img/header__login.svg" class="header__link" alt="login"></a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="header__menu-link"><img src="img/header__cart.svg" class="header__link" alt="cart"></a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -73,7 +115,7 @@
       <p class="product__subtitle">Shop for items based on what we featured in this week </p>
       <div class="product__cards">
         <div class="product__card">
-          <a class="card__item-link">
+          <a href="#" class="card__item-link">
             <img src="img/first__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -85,7 +127,7 @@
           </a>
         </div>
         <div class="product__card">
-          <a class="card__item-link">
+          <a href="#" class="card__item-link">
             <img src="img/second__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -97,7 +139,7 @@
           </a>
         </div>
         <div class="product__card">
-          <a class="card__item-link">
+          <a href="#" class="card__item-link">
             <img src="img/third__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -109,7 +151,7 @@
           </a>
         </div>
         <div class="product__card">
-          <a class="card__item-link">
+          <a href="#" class="card__item-link">
             <img src="img/fourth__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -121,7 +163,7 @@
           </a>
         </div>
         <div class="product__card">
-          <a class="card__item-link">
+          <a href="#" class="card__item-link">
             <img src="img/fifth__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -133,7 +175,7 @@
           </a>
         </div>
         <div class="product__card">
-          <a class="card__item-link">
+          <a href="#" class="card__item-link">
             <img src="img/sixth__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
