@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6b85dda839.js" crossorigin="anonymous">
+  </script>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet"
@@ -16,15 +18,54 @@
   <header class="header">
     <div class="container">
       <nav class="header__menu">
-        <div class="header__menu-left">
-          <a href="index.html"><img src="img/header_logo.svg" class="header__logo" alt="logo"></a>
-          <a href="#"><img src="img/header__search.svg" class="header__search" alt="search"></a>
-        </div>
-        <div class="header__menu-right">
-          <a href="#" class="header__menu-link"><img src="img/header__menu.svg" class="header__link" alt="menu"></a>
-          <a href="#" class="header__menu-link"><img src="img/header__login.svg" class="header__link" alt="login"></a>
-          <a href="#" class="header__menu-link"><img src="img/header__cart.svg" class="header__link" alt="cart"></a>
-        </div>
+        <ul class="header__menu-left">
+          <li class="menu__list">
+            <a href="index.html"><img src="img/header_logo.svg" class="header__logo" alt="logo"></a>
+          </li>
+          <li class="menu__list">
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+        <ul class="header__menu-right">
+          <li class="menu__list">
+            <a href="#" class="header__menu-link main__menu"><i class="fas fa-bars"></i></a>
+            <div class="menu__box">
+              <div class="menu__item">
+                <h2 class="menu__title">MENU</h2>
+                <h3 class="menu__subtitle">MAN</h3>
+                <div class="menu__wrap">
+                  <a href="catalog.html" class="list__link">Accessories</a>
+                  <a href="catalog.html" class="list__link">Bags</a>
+                  <a href="catalog.html" class="list__link">Denim</a>
+                  <a href="catalog.html" class="list__link">T-Shirts</a>
+                </div>
+                <h3 class="menu__subtitle">WOMAN</h3>
+                <div class="menu__wrap">
+                  <a href="catalog.html" class="list__link">Accessories</a>
+                  <a href="catalog.html" class="list__link">Jackets & Coats</a>
+                  <a href="catalog.html" class="list__link">Polos</a>
+                  <a href="catalog.html" class="list__link">T-Shirts</a>
+                  <a href="catalog.html" class="list__link">Shirts</a>
+                </div>
+                <h3 class="menu__subtitle">KIDS</h3>
+                <div class="menu__wrap">
+                  <a href="catalog.html" class="list__link">Accessories</a>
+                  <a href="catalog.html" class="list__link">Jackets & Coats</a>
+                  <a href="catalog.html" class="list__link">Polos</a>
+                  <a href="catalog.html" class="list__link">T-Shirts</a>
+                  <a href="catalog.html" class="list__link">Shirts</a>
+                  <a href="catalog.html" class="list__link">Bags</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="header__menu-link"><i class="far fa-user"></i></a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="header__menu-link"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -67,13 +108,13 @@
       </div>
     </div>
   </section>
-  <section class="product">
+  <section class="products">
     <div class="container">
-      <h2 class="product__title">Fetured Items</h2>
-      <p class="product__subtitle">Shop for items based on what we featured in this week </p>
-      <div class="product__cards">
-        <div class="product__card">
-          <a class="card__item-link">
+      <h2 class="products__title">Fetured Items</h2>
+      <p class="products__subtitle">Shop for items based on what we featured in this week </p>
+      <div class="products__cards">
+        <div class="products__card">
+          <a href="product.html" class="card__item-link">
             <img src="img/first__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -84,8 +125,8 @@
             </div>
           </a>
         </div>
-        <div class="product__card">
-          <a class="card__item-link">
+        <div class="products__card">
+          <a href="product.html" class="card__item-link">
             <img src="img/second__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -96,8 +137,8 @@
             </div>
           </a>
         </div>
-        <div class="product__card">
-          <a class="card__item-link">
+        <div class="products__card">
+          <a href="product.html" class="card__item-link">
             <img src="img/third__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -108,8 +149,8 @@
             </div>
           </a>
         </div>
-        <div class="product__card">
-          <a class="card__item-link">
+        <div class="products__card">
+          <a href="product.html" class="card__item-link">
             <img src="img/fourth__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -120,8 +161,8 @@
             </div>
           </a>
         </div>
-        <div class="product__card">
-          <a class="card__item-link">
+        <div class="products__card">
+          <a href="product.html" class="card__item-link">
             <img src="img/fifth__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -132,8 +173,8 @@
             </div>
           </a>
         </div>
-        <div class="product__card">
-          <a class="card__item-link">
+        <div class="products__card">
+          <a href="product.html" class="card__item-link">
             <img src="img/sixth__card.png" alt="" class="card__img">
             <div class="card__item-description">
               <h2 class="card__title">ELLERY X M'O CAPSULE</h2>
@@ -145,10 +186,10 @@
           </a>
         </div>
       </div>
-      <a href="#" class="product__link">Browse All Product</a>
+      <a href="catalog.html" class="products__link">Browse All Product</a>
     </div>
   </section>
-  <div class="advantages">
+  <article class="advantages">
     <div class="container advantages__container">
       <article class="advantages__wrap">
         <img src="img/delivery.svg" alt="delivery" class="advantages__img-delivery">
@@ -169,8 +210,8 @@
           extensive models.</p>
       </article>
     </div>
-  </div>
-  <div class="feedback">
+  </article>
+  <section class="feedback">
     <div class="container feedback__container">
       <figure class="review">
         <img src="img/Intersect.png" alt="photo" class="review__photo">
@@ -180,26 +221,26 @@
       <form action="#" class="subscribe">
         <p class="subscribe__text"><span class="subscribe__title">SUBSCRIBE</span><br>FOR OUR NEWLETTER AND PROMOTION
         </p>
-        <input type="email" class="subscribe__email" name="Email" value="Enter Your Email">
+        <input type="email" class="subscribe__email" name="Email" placeholder="Enter Your Email">
         <button type="submit" class="subscribe__button">Subscribe</button>
       </form>
     </div>
-  </div>
+  </section>
   <footer class="footer">
     <div class="container footer-container">
       <p class="footer__copyright"> © 2021 Brand All Rights Reserved.</p>
       <nav class="footer__nav">
-        <a href="#" class="footer__link">
-          <img src="img/facebook.svg" alt="facebook" class="link__img">
+        <a href="#" class="footer__link facebook__link">
+          <i class="fab fa-facebook-f"></i>
         </a>
         <a href="#" class="footer__link">
-          <img src="img/instagramm.svg" alt="instagramm" class="link__img">
+          <i class="fab fa-instagram"></i>
         </a>
         <a href="#" class="footer__link">
-          <img src="img/pinterest.svg" alt="pinterest" class="link__img">
+          <i class="fab fa-pinterest-p"></i>
         </a>
         <a href="#" class="footer__link">
-          <img src="img/twitter.svg" alt="twitter" class="link__img">
+          <i class="fab fa-twitter"></i>
         </a>
       </nav>
     </div>
