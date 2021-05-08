@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 * {
@@ -95,8 +95,7 @@ body {
 .menu__list:hover .menu__box {
   display: flex;
   position: absolute;
-  top: 38px;;
-  /* пришлось использовать этот костыль из-за непонимания, как сделать это меню буз js */
+  top: 38px;
   right: -136px;
   z-index: 2;
 }
@@ -152,7 +151,7 @@ body {
 
 .banner__text-container {
   margin-top: 290px;
-  margin-left: 290px
+  margin-left: 290px;
 }
 
 .text {
@@ -163,7 +162,7 @@ body {
   position: relative;
   font-weight: 700;
   font-size: 32px;
-  line-height: 38.4px;
+  line-height: 38px;
   margin-right: 91px;
 }
 
@@ -180,7 +179,7 @@ body {
 .banner__title {
   font-weight: 900;
   font-size: 48px;
-  line-height: 57.6px;
+  line-height: 58px;
 }
 
 .baner_text_color {
@@ -190,8 +189,6 @@ body {
 .ofer {
   margin-bottom: 96px;
 }
-
-
 
 .ofer__gender-container {
   display: flex;
@@ -246,14 +243,14 @@ body {
 }
 
 .products__title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 6px;
 }
 
 .products__subtitle {
-  font-weight: 400px;
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #9F9F9F;
@@ -294,7 +291,7 @@ body {
   color: #000000;
 }
 
-.card__text{
+.card__text {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -341,11 +338,11 @@ body {
 }
 
 .advantages__img-discount {
-  margin-bottom: 19.07px;
+  margin-bottom: 19px;
 }
 
-.advantages__img-crown{
-  margin-bottom: 23.07px;
+.advantages__img-crown {
+  margin-bottom: 23px;
 }
 
 .advantages__title {
@@ -410,7 +407,7 @@ body {
 .subscribe__title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 37.7px;
+  line-height: 37px;
 }
 
 .subscribe__email {
@@ -499,7 +496,7 @@ body {
   list-style: none;
 }
 
-.nav__link{
+.nav__link {
   text-decoration: none;
   font-weight: 300;
   font-size: 14px;
@@ -509,15 +506,15 @@ body {
 
 .last__nav-link {
   font-weight: 700;
-  color: #F16D7F;;
+  color: #F16D7F;
 }
 
 .nav__link-item:not(:last-child)::after {
   content: "/";
-  margin: 0px 3px;
+  margin: 0 3px;
 }
 
-.nav__title{
+.nav__title {
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
@@ -554,7 +551,7 @@ body {
 .catalog__cards {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 48.5px;
+  margin-bottom: 49px;
 }
 
 .catalog__pages {
@@ -566,7 +563,7 @@ body {
   text-align: center;
   border: 1px solid #EBEBEB;
   border-radius: 5px;
-  padding: 11.5px 40px;
+  padding: 11px 40px;
 }
 
 .pages__li {
@@ -668,3 +665,5 @@ body {
   justify-content: center;
   margin-bottom: 49px;
 }
+
+/*# sourceMappingURL=style.css.map */
