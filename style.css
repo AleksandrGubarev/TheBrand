@@ -693,17 +693,63 @@ body {
   margin-bottom: 0;
 }
 
-.catalog__choise {
+.catalog__choice {
   margin-left: 336px;
+  display: flex;
+  position: relative;
 }
 
-.catalog_choise-menu {
+.catalog_choice-menu {
   margin-right: 48px;
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
   color: #6F6E6E;
   text-decoration: none;
+}
+
+.summary_size {
+  display: block;
+}
+
+.summary_size::-webkit-details-marker {
+  display: none;
+}
+
+.choice-fas {
+  margin-left: 10px;
+  color: #6F6E6E;
+  font-size: 14px;
+}
+
+.summary_size {
+  position: relative;
+}
+
+.size-form {
+  background-color: white;
+  width: 79px;
+  height: 103px;
+  padding: 10px;
+  position: absolute;
+  left: 151px;
+  z-index: 1;
+  box-shadow: 0 0 5px grey;
+}
+
+.size-check {
+  margin-bottom: 10px;
+}
+.size-check:last-of-type {
+  margin-bottom: 0;
+}
+
+.size-txt {
+  margin-left: 10px;
+  color: #6F6E6E;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .catalog__cards {
