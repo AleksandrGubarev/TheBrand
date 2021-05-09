@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="https://kit.fontawesome.com/6b85dda839.js" crossorigin="anonymous">
   </script>
-  <link rel="stylesheet"
+  <link rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
@@ -86,7 +86,59 @@
   <section class="catalog">
     <div class="container catalog-container">
       <div class="filter">
-        <a href="#" class="catalog__filter">FILTER</a>
+        <details class="filter__wrap">
+          <summary class="catalog__filter">FILTER</summary>
+          <div class="details_filter">
+            <details class="catalog-menu_wrap">
+              <summary class="catalog-menu_title">CATEGORY</summary>
+              <ul class="catalog-menu_ul">
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Accessories</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Bags</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Denim</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Hoodies & Sweatshirts</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Jackets & Coats</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Polos</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Shirts</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Shoes</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Sweaters & Knits</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">T-Shirts</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Tanks</a></li>
+              </ul>
+            </details>
+            <details class="catalog-menu_wrap">
+              <summary class="catalog-menu_title">BRAND</summary>
+              <ul class="catalog-menu_ul">
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Accessories</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Bags</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Denim</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Hoodies & Sweatshirts</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Jackets & Coats</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Polos</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Shirts</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Shoes</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Sweaters & Knits</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">T-Shirts</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Tanks</a></li>
+              </ul>
+            </details>
+            <details class="catalog-menu_wrap">
+                <summary class="catalog-menu_title">DESIGNER</summary>
+              <ul class="catalog-menu_ul">
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Accessories</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Bags</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Denim</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Hoodies & Sweatshirts</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Jackets & Coats</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Polos</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Shirts</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Shoes</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Sweaters & Knits</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">T-Shirts</a></li>
+                <li class="catalog-menu-li"><a href="#" class="catalog-menu_link">Tanks</a></li>
+              </ul>
+            </details>
+          </div>
+        </details>
         <div class="catalog__choise">
           <a href="#" class="catalog_choise-menu">TRENDING NOW</a>
           <a href="#" class="catalog_choise-menu">SIZE </a>
@@ -259,16 +311,34 @@
       </div>
     </div>
     <nav class="catalog__pages">
-      <ul class="pages__ul">
-        <a href="catalog.html" class="pages__li">1</a>
-        <a href="#" class="pages__li">2</a>
-        <a href="#" class="pages__li">3</a>
-        <a href="#" class="pages__li">4</a>
-        <a href="#" class="pages__li">5</a>
-        <a href="#" class="pages__li">6</a>
-        <a href="#" class="pages__li">...</a>
-        <a href="#" class="pages__li">20</a>
-      </ul>
+      <div class="catalog-ul_wrap">
+        <ul class="pages__ul">
+          <li class="catalog-pages_li">
+            <a href="catalog.html" class="pages__li">1</a>
+          </li>
+          <li class="catalog-pages_li">
+            <a href="#" class="pages__li">2</a>
+          </li>
+          <li class="catalog-pages_li">
+            <a href="#" class="pages__li">3</a>
+          </li>
+          <li class="catalog-pages_li">
+            <a href="#" class="pages__li">4</a>
+          </li>
+          <li class="catalog-pages_li">
+            <a href="#" class="pages__li">5</a>
+          </li>
+          <li class="catalog-pages_li">
+            <a href="#" class="pages__li">6</a>
+          </li>
+          <li class="catalog-pages_li">
+            <a href="#" class="pages__li">...</a>
+          </li>
+          <li class="catalog-pages_li">
+            <a href="#" class="pages__li">20</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </section>
   <section class="advantages">
