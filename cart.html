@@ -62,13 +62,13 @@
             <a href="#" class="header__menu-link"><i class="header-fas far fa-user"></i></a>
           </li>
           <li class="menu__list">
-            <a href="#" class="header__menu-link"><i class="header-fas fas fa-shopping-cart"></i></a>
+            <a href="cart.html" class="header__menu-link"><i class="header-fas fas fa-shopping-cart"></i></a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <div class="catalog__nav">
+  <div class="catalog__nav catalog__nav-cart">
     <div class="container nav-container">
       <h2 class="nav__title">SHOPPING CART</h2>
 <!--      <nav class="nav__crumbs">-->
@@ -80,6 +80,65 @@
 <!--      </nav>-->
     </div>
   </div>
+  <section class="cart-wrap">
+    <div class="container cart__container">
+      <div class="cart-product-wrap">
+        <div class="cart__cards">
+          <div class="cart__card">
+            <img src="img/cart-product1.png" class="cart_card_img" alt="MANGO  PEOPLE  T-SHIRT">
+            <div class="cart_card_txt">
+              <div class="cart_card_txt-top">
+                <h2 class="cart_txt-top_heading">MANGO  PEOPLE  T-SHIRT</h2>
+                <a href="#" class="cart_txt-top_link">X</a>
+              </div>
+              <div class="cart_card_txt-bot">
+                <p class="cart_txt-bot_text">Price: <span class="cart_card_span">$300</span></p>
+                <p class="cart_txt-bot_text">Color: Red</p>
+                <p class="cart_txt-bot_text">Size: Xl</p>
+                <div class="cart-quanity_wrap">
+                  <p class="cart_txt-bot_text cart-quanity_wrap-text">Quantity:</p>
+                  <p class="cart_txt-bot_text cart-quanity_txt">2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__card">
+            <img src="img/cart-product2.png" class="cart_card_img" alt="MANGO  PEOPLE  T-SHIRT">
+            <div class="cart_card_txt">
+              <div class="cart_card_txt-top">
+                <h2 class="cart_txt-top_heading">MANGO  PEOPLE   T-SHIRT</h2>
+                <a href="#" class="cart_txt-top_link">X</a>
+              </div>
+              <div class="cart_card_txt-bot">
+                <p class="cart_txt-bot_text">Price: <span class="cart_card_span">$300</span></p>
+                <p class="cart_txt-bot_text">Color: Red</p>
+                <p class="cart_txt-bot_text">Size: Xl</p>
+                <div class="cart-quanity_wrap">
+                  <p class="cart_txt-bot_text cart-quanity_wrap-text">Quantity:</p>
+                  <p class="cart_txt-bot_text cart-quanity_txt">2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart__buttons">
+          <a href="#" class="cart__button">CLEAR SHOPPING CART</a>
+          <a href="#" class="cart__button">CONTINUE SHOPPING</a>
+        </div>
+      </div>
+      <div class="cart-confirmation">
+        <form action="#" class="cart__form">
+          <form action="#" class="form__order">
+            <h2 class="cart_form_title">SHIPPING ADRESS</h2>
+            <input type="text" class="form_order_input" placeholder="Bangladesh"><br>
+            <input type="text" class="form_order_input" placeholder="State"><br>
+            <input type="text" class="form_order_input" placeholder="Postcode / Zip"><br>
+            <button type="submit" class="form_order_button">GET A QUOTE</button>
+          </form>
+        </form>
+      </div>
+    </div>
+  </section>
   <section class="feedback">
     <div class="container feedback__container">
       <figure class="review">
