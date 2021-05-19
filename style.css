@@ -14,19 +14,21 @@ body {
 
 .container {
   max-width: 1140px;
+  padding: 0 2%;
   margin: 0 auto;
 }
 
 .header__menu {
   display: flex;
   justify-content: space-between;
-  padding-top: 18px;
-  padding-bottom: 19px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .header__menu-left {
   display: flex;
-  min-width: 111px;
+  width: 11%;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -54,32 +56,21 @@ body {
 
 .header__menu-right {
   display: flex;
-  min-width: 169px;
+  width: 20%;
   justify-content: space-between;
-  align-items: center;
 }
 
 .menu__list {
   list-style: none;
+  position: relative;
+  margin-left: 3%;
 }
 
-.header__logo {
-  margin-right: 40px;
-}
-
-.header__menu-link {
-  margin-right: 33px;
-}
-
-.header__menu-link:last-of-type {
-  margin-right: 0;
+.menu__list:first-of-type {
+  margin-left: 0;
 }
 
 .header__menu-right {
-  position: relative;
-}
-
-.menu__list {
   position: relative;
 }
 
@@ -144,6 +135,11 @@ body {
 .banner {
   background-color: #f1e4e6;
   margin-bottom: 65px;
+  overflow: hidden;
+}
+
+.banner__img {
+  margin-left: -20%;
 }
 
 .banner__container {
@@ -151,8 +147,8 @@ body {
 }
 
 .banner__text-container {
-  margin-top: 290px;
-  margin-left: 290px;
+  margin-top: 25%;
+  margin-left: 2%;
 }
 
 .text {
@@ -196,11 +192,7 @@ body {
   justify-content: space-between;
 }
 
-.ofer__gender-card:last-of-type {
-  margin-right: 0;
-}
-
-.ofer_hover:hover {
+.ofer__link:hover {
   box-shadow: 0 0 12px #222;
 }
 
@@ -237,12 +229,13 @@ body {
 }
 
 .ofer__text-accesories {
-  top: 65px;
-  left: 491px;
+  top: 40%;
+  left: 40%;
 }
 
 .link__img {
   height: 100%;
+  width: 100%;
 }
 
 .products {
@@ -410,6 +403,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  background-color: #F4F4F4;
 }
 
 .feedback__container {
@@ -937,7 +931,7 @@ body {
 
 .cart__card {
   display: flex;
-  max-width: 652px;
+  width: 652px;
   margin-bottom: 40px;
   box-shadow: 20px 20px 28px lightgrey;
 }
@@ -961,7 +955,7 @@ body {
   font-size: 24px;
   font-weight: normal;
   margin-right: 57px;
-  max-width: 262px;
+  width: 262px;
 }
 
 .cart_txt-top_link {
@@ -1049,7 +1043,7 @@ body {
 
 .cart__price {
   background-color: #F5F3F3;
-  max-width: 360px;
+  width: 360px;
   margin-top: 57px;
   text-align: center;
   display: flex;
@@ -1203,6 +1197,99 @@ body {
 }
 .registration-text__li:last-of-type {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .header__menu-left {
+    width: 15%;
+  }
+
+  .header-fas {
+    font-size: 34px;
+  }
+
+  .banner__img {
+    width: 52%;
+    margin-left: 0;
+  }
+
+  .text {
+    font-size: 44px;
+    line-height: 53px;
+  }
+
+  .banner__text-container {
+    margin-top: 18%;
+  }
+
+  .banner__text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-right: 0;
+  }
+  .banner__text:before {
+    top: -188%;
+    left: -8%;
+  }
+
+  .ofer__gender-card {
+    width: 32%;
+  }
+
+  .ofer__text {
+    top: 33%;
+    left: 26%;
+  }
+
+  .ofer__text-women {
+    left: 19%;
+  }
+
+  .ofer__text-accesories {
+    left: 39%;
+  }
+
+  .advantages {
+    padding: 5% 27%;
+  }
+
+  .advantages__container {
+    flex-direction: column;
+  }
+
+  .advantages__wrap {
+    margin: 0 0 11%;
+  }
+  .advantages__wrap:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .feedback {
+    background-image: url("img/subscribe2.png");
+    min-height: 693px;
+  }
+
+  .feedback__container {
+    display: block;
+  }
+
+  .review {
+    margin: 0 auto;
+    padding-top: 9%;
+  }
+
+  .subscribe {
+    margin: 0 auto;
+    padding-top: 7%;
+  }
+
+  .subscribe__email {
+    width: 232px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
