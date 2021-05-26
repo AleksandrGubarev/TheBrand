@@ -168,6 +168,7 @@ body
 
 .ofer__link:hover
   box-shadow: 0 0 12px #222
+  transition: 0.5s
 
 .ofer__link
   display: inline-block
@@ -202,6 +203,9 @@ body
 
 .link__img
   height: 100%
+  width: 99%
+
+.link_img_width
   width: 100%
 
 .products
@@ -222,7 +226,7 @@ body
 
 .products__cards
   display: flex
-  justify-content: space-between
+  justify-content: space-around
   flex-wrap: wrap
   margin-bottom: 19px
 
@@ -233,9 +237,11 @@ body
   position: relative
   &:hover
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+    transition: 0.5s
 
   &:hover .card__img
     filter: brightness(50%)
+    transition: 0.5s
 
   &:hover .add-item__link
     display: flex
@@ -288,6 +294,7 @@ body
   text-decoration: none
   &:hover
     box-shadow: 0 0 12px #fff
+    transition: 0.5s
 
 .add-txt
   color: #FFFFFF
@@ -303,6 +310,7 @@ body
   &:hover
     background-color: #F16D7F
     color: #fff
+    transition: 0.5s
 
 
 .advantages
@@ -369,7 +377,7 @@ body
   margin-top: 97px
   margin-bottom: 126px
   text-align: center
-  width: 360px
+  max-width: 360px
   height: 225px
 
 
@@ -404,11 +412,13 @@ body
 
 .subscribe__email
   height: 49px
-  width: 322px
+  max-width: 322px
   border-radius: 45px 0 0 45px
   opacity: 0.67
   border: none
   padding-left: 22px
+  &:focus
+    outline: none
 
 
 .subscribe__button
@@ -464,6 +474,7 @@ body
 .footer__link:hover
   background-color: #F16D7F
   border: 1px solid #F16D7F
+  transition: 0.5s
 
 .fab
   color: #000
@@ -530,8 +541,6 @@ body
   color: #000
   text-decoration: none
 
-//.catalog__filter:hover
-//  color: #EF5B70
 .filter__wrap[open] .catalog__filter
   color: #EF5B70
 
@@ -573,6 +582,7 @@ body
   line-height: 17px
   font-size: 14px
   font-weight: normal
+  display: block
   &:hover
     color: #EF5B70
 
@@ -696,6 +706,7 @@ body
 
 .pages__li:hover
   color: #EF5B70
+  transition: 0.5s
 
 
 .product__nav
@@ -841,6 +852,10 @@ body
   &:last-child
     margin-bottom: 0
 
+.cart-wrap__link
+  text-decoration: none
+  display: block
+
 .cart_card_img
   margin-right: 31px
 
@@ -898,6 +913,7 @@ body
     background: #F16D7F
     color: #FFFFFF
     border: 1px solid #F16D7F
+    transition: 0.5s
 
 .cart_form_title
   font-weight: 300
@@ -925,6 +941,7 @@ body
     background: $pink
     color: #FFFFFF
     border: 1px solid $pink
+    transition: 0.5s
 
 .cart__price
   background-color: $light_pink
@@ -974,6 +991,7 @@ body
     background: $pink
     color: #FFFFFF
     border: 1px solid $pink
+    transition: 0.5s
 
 .registration__container
   display: flex
@@ -1106,7 +1124,7 @@ body
     margin: 0 auto
     padding-top: 7%
   .subscribe__email
-    width: 232px
+    max-width: 50%
 
 @media (max-width: 375px)
   .container
@@ -1160,6 +1178,8 @@ body
   .subscribe__text
     font-size: 14px
     line-height: 22px
+  .subscribe__button
+    max-width: 33%
   .footer-container
     display: flex
     flex-direction: column-reverse
